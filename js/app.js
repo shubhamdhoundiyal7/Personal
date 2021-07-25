@@ -911,8 +911,9 @@ function ajax(method, url, data, success, error) {
 
 $(".dl-button").on("click", (e) => {
   e.preventDefault();
-  window.location.href = "../Aditya_Rawat_CV.pdf";
   e.target.setAttribute("target", "_blank");
+  window.location.href = "../Aditya_Rawat_CV.pdf";
+
   let btn = $(e.currentTarget),
     label = btn.find(".label"),
     counter = label.find(".counter");
