@@ -280,8 +280,6 @@ $(document).ready(function () {
 
 // OSCILATOR
 
-
-
 function initOciliator(remove) {
   ctx = document.getElementById("canvas").getContext("2d");
 
@@ -912,6 +910,9 @@ function ajax(method, url, data, success, error) {
 }
 
 $(".dl-button").on("click", (e) => {
+  e.preventDefault();
+  window.location.href = "../Aditya_Rawat_CV.pdf";
+  e.target.setAttribute("target", "_blank");
   let btn = $(e.currentTarget),
     label = btn.find(".label"),
     counter = label.find(".counter");
